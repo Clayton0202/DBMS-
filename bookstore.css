@@ -1,0 +1,199 @@
+
+body{
+    background-color : #33527a;
+    opacity: 1;
+    font-family: sans-serif;
+    margin :0px;
+    box-sizing: border-box;
+}
+.top{
+    background-color:#2d4059 ;
+    padding :10px;    
+}
+*{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-kerning :auto;
+}
+
+.subtitle{
+    font-size: 25px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color :#e5e5e5;
+    text-align: center;
+    letter-spacing: 0.05em;   
+}
+.title{
+    font-size: 90px;
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    color :#decdc3;
+    text-align: center;
+
+}
+
+.web{
+    display : flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.input{
+    width:600px;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+    transition: width 1s , height 0.5s;
+    background-color: azure;
+}
+.input:hover{
+    width:700px;
+    height: 60px;
+    transition: width 0.5s, height 0.5s;
+    background-color: azure;
+}
+[value]{
+    font-size: 25px;
+    color :#decdc3;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding:5px;
+}
+[placeholder]{
+    font-size: 25px;
+    color :darkgray;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.click
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:10px;
+}
+
+[name]:hover{
+    background-color:transparent;
+}
+
+[name = "button"]
+{
+    background-color: #ea5455;
+    border-radius: 7px;
+}
+
+[value]
+{
+    font-size:25px;
+    color:#decdc3;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.book div{
+    background-color:white;
+    padding :2px;
+    width :100px; 
+    border: 2px solid #2d4059;
+      
+}
+
+.book{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width:1000px;
+    height: 200px;
+    border: 2px solid #2d4059;
+    
+}
+
+.box-3:hover{
+
+    background-color: #decdc3;
+}
+.box-2:hover{
+
+    background-color: #decdc3;
+}
+.box-1:hover{
+
+    background-color: #decdc3;
+}
+
+.pic{
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.pic_float:hover {
+    transform: translateY(-6px);
+    box-shadow: 2px 2px 6px 2px RoyalBlue;
+  }
+.pic_float:active {
+    transform: translateY(-6px) scale(.98);
+  }
+.box-1{
+   flex :1;
+   position: relative;
+}
+
+.box-2{
+    flex :1;
+    position: relative;
+}
+.box-3{
+    flex :1;
+    position: relative;
+}
+
+
+@keyframes variation {
+    0% {background-color: rgb(244, 98, 65);left:240px}
+    20% {background-color: rgb(221, 126, 31);left:400px}
+    40% {background-color: rgb(218, 224, 34);left:600px}
+    60% {background-color: rgb(26, 197, 58);left:800px}
+    80% {background-color: rgb(64, 231, 236);left:1000px}
+    100% {background-color: rgb(151, 106, 228);left:1180px}
+    
+    
+    
+}
+.box{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(77, 200, 155);
+    position: relative;
+    border-radius:5px;
+}
+.box-animation{
+    animation-name: variation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+.word
+{
+    color:#2d4059;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 5px;
+}
